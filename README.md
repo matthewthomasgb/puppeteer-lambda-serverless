@@ -1,4 +1,6 @@
 # puppeteer-lambda-serverless
+ ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/matthewthomasgb/puppeteer-lambda-serverless?label=version) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/matthewthomasgb/puppeteer-lambda-serverless/main-release) [![Known Vulnerabilities](https://snyk.io/test/github/matthewthomasgb/puppeteer-lambda-serverless/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matthewthomasgb/puppeteer-lambda-serverless?targetFile=package.json)
+
 A sample project running puppeteer in AWS lambda, deployed with serverless. 
 
 [Puppeteer](https://pptr.dev/) is a Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol.
