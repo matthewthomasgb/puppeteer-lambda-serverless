@@ -1,0 +1,12 @@
+service: puppeteer-lambda-serverless
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  sample:
+    handler: source/index.handler
+    description: Sample puppeteer lambda serverless
+    memorySize: 1600
+    timeout: 10

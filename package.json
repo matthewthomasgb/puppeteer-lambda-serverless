@@ -1,0 +1,71 @@
+{
+  "name": "puppeteer-lambda-serverless",
+  "version": "1.0.0",
+  "description": "Sample Puppeteer script using Lambda and Serverless",
+  "main": "source/index.js",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "ci": false,
+    "dryRun": false,
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "7.0.0",
+    "puppeteer-core": "7.1.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "eslint": "7.20.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-promise": "4.3.1",
+    "prettier": "2.2.1",
+    "semantic-release": "17.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ./source",
+    "prettier": "prettier --check ./source"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewthomasgb/puppeteer-lambda-serverless.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "lambda",
+    "serverless",
+    "aws"
+  ],
+  "author": "Matthew Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewthomasgb/puppeteer-lambda-serverless/issues"
+  },
+  "homepage": "https://github.com/matthewthomasgb/puppeteer-lambda-serverless#readme"
+}
