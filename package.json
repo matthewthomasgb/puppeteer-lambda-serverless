@@ -7,7 +7,7 @@
     "branches": [
       "main"
     ],
-    "ci": false,
+    "ci": true,
     "dryRun": false,
     "plugins": [
       "@semantic-release/commit-analyzer",
